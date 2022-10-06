@@ -1,0 +1,4 @@
+LIBRARY slexCCallerExample_cgxe.mexw64
+EXPORTS
+mexFunction
+mexfilerequiredapiversion

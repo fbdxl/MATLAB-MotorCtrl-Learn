@@ -1,0 +1,7 @@
+#include "__cf_Vector_Control_SVPWM_encoderless_learn.h"
+#ifndef RTW_HEADER_Vector_Control_SVPWM_encoderless_learn_acc_types_h_
+#define RTW_HEADER_Vector_Control_SVPWM_encoderless_learn_acc_types_h_
+#include "rtwtypes.h"
+typedef struct Parameters_Vector_Control_SVPWM_encoderless_learn_
+Parameters_Vector_Control_SVPWM_encoderless_learn ;
+#endif

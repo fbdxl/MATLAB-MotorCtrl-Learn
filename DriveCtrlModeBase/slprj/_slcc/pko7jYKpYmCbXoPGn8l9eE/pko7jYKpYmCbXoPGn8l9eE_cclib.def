@@ -1,0 +1,18 @@
+LIBRARY pko7jYKpYmCbXoPGn8l9eE_cclib.dll
+EXPORTS
+    get_dll_checksum_pko7jYKpYmCbXoPGn8l9eE
+    add_pko7jYKpYmCbXoPGn8l9eE
+    timesK_pko7jYKpYmCbXoPGn8l9eE
+    incrementElement_pko7jYKpYmCbXoPGn8l9eE
+    getNextTrafficLight_pko7jYKpYmCbXoPGn8l9eE
+    counterbusFcn_pko7jYKpYmCbXoPGn8l9eE
+    __mw_instrum_initialize_coverage
+    __mw_instrum_upload_coverage_synthesis
+    __mw_instrum_terminate_coverage
+    __mw_instrum_get_db_len
+    __mw_instrum_get_db_ptr
+    __mw_instrum_get_hits_size
+    __mw_instrum_get_hits_ptr
+    __mw_instrum_get_truth_tables_size
+    __mw_instrum_get_truth_tables_ptr
+    get_checksum_source_info

@@ -1,0 +1,6 @@
+MODEL=Vector_Control_SVPWM_encoderless
+NUMST=3
+NCSTATES=0
+HAVESTDIO
+INTEGER_CODE=0
+MT=0

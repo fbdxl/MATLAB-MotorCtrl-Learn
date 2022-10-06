@@ -1,0 +1,3 @@
+#ifndef CF_Vector_Control_SVPWM_encoderless_H__
+#define CF_Vector_Control_SVPWM_encoderless_H__
+#endif

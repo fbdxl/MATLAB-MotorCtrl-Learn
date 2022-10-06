@@ -1,0 +1,43 @@
+CC     = "D:\matlab 2019b\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "D:\matlab 2019b\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "D:\matlab 2019b\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -nodeclspec  
+LDFLAGS = -s -dll -L"D:\matlab 2019b\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"c_mexapi_version.obj"\
+	"lccstub.obj"\
+	"slexCCallerExample_cgxe.obj"\
+	"m_FHYdnqWNzY9kpx9XFuJztB.obj"\
+	"slexCCallerExample_cgxe_registry.obj"\
+	"slexCCallerExample_cgxe.def"\
+	"D:\SIMU\DriveCtrlModeBase\slprj\_slcc\pko7jYKpYmCbXoPGn8l9eE\pko7jYKpYmCbXoPGn8l9eE_cclib.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmx.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmex.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmat.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libut.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libemlrt.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmwcgxert.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmwslexec_simbridge.lib"\
+	"D:\matlab 2019b\lib\win64\libmwipp.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libcovrt.lib"\
+	"D:\matlab 2019b\extern\lib\win64\microsoft\libmwsl_sfcn_cov_bridge.lib"\
+
+INCLUDE_PATH= -I"D:\matlab 2019b\extern\include"  -I"D:\matlab 2019b\simulink\include"  -I"D:\matlab 2019b\rtw\c\src"  -I"D:\SIMU\drivectrlmodebase\slprj\_cgxe\slexccallerexample\src"  -I"D:\SIMU\drivectrlmodebase"  -I"D:\matlab 2019b\toolbox\simulink\simdemos\simfeatures"  -I"D:\matlab 2019b\toolbox\simulink\simdemos\simfeatures\include"  -I"D:\matlab 2019b\toolbox\simulink\simdemos\simfeatures\src"  -I"D:\SIMU\DriveCtrlModeBase\slprj\_cprj"  -I"D:\matlab 2019b\sys\lcc64\lcc64\include64"  -I"D:\SIMU\DriveCtrlModeBase\slprj\_cgxe\slexCCallerExample\src"  -I"D:\SIMU\DriveCtrlModeBase"  -I"D:\SIMU\DriveCtrlModeBase\slprj\_slcc\pko7jYKpYmCbXoPGn8l9eE" 
+ 
+
+slexCCallerExample_cgxe.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o slexCCallerExample_cgxe.mexw64 @slexCCallerExample_cgxe.lmko
+c_mexapi_version.obj :	"D:\matlab 2019b\extern\version\c_mexapi_version.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\matlab 2019b\extern\version\c_mexapi_version.c"
+lccstub.obj :	"D:\matlab 2019b\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\matlab 2019b\sys\lcc64\lcc64\mex\lccstub.c"
+slexCCallerExample_cgxe.obj :	"slexCCallerExample_cgxe.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "slexCCallerExample_cgxe.c"
+m_FHYdnqWNzY9kpx9XFuJztB.obj :	"m_FHYdnqWNzY9kpx9XFuJztB.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_FHYdnqWNzY9kpx9XFuJztB.c"
+slexCCallerExample_cgxe_registry.obj :	"slexCCallerExample_cgxe_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "slexCCallerExample_cgxe_registry.c"
